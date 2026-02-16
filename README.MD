@@ -1,6 +1,6 @@
 # S&P 500 Market Intelligence | 2026 Outlook
 
-A comprehensive stock market analysis website providing deep research into whether the S&P 500 will top in 2026. Features technical analysis, fundamental research, AI impact assessment, geopolitical risk analysis, and historical parallel comparisons.
+A stock market analysis website providing deep research into whether the S&P 500 will top in 2026. Features technical analysis, fundamental research, AI impact assessment, geopolitical risk analysis, black swan / tail risk assessment, and historical parallel comparisons.
 
 ## Live Site
 
@@ -13,7 +13,9 @@ Open `index.html` in any modern browser to view the analysis.
 - **Fundamental Analysis**: CAPE ratio (39.7x), Buffett Indicator (230%), forward P/E, earnings projections, Wall Street targets
 - **AI Impact**: Magnificent 7 concentration, NVIDIA analysis, hyperscaler $600B+ capex, dot-com comparisons
 - **Geopolitical Risk**: Trump tariff timeline, trade war status, DOGE spending cuts, Russia-Ukraine, presidential cycle
+- **Black Swan / Tail Risks**: China-Taiwan, pandemic resurgence, US debt crisis, AI bubble, CRE crisis, Russia-NATO, cyber attacks, climate events
 - **Historical Parallels**: Bubble indicator scorecard, Jeremy Grantham's superbubble thesis, sentiment data, margin debt records
+- **Key Dates & Catalysts**: FOMC schedule, Mag 7 earnings calendar, economic data releases, political events, quarterly timeline
 - **2026 Outlook**: Scenario analysis (bear/base/bull), timing predictions, key dates to watch
 
 ## Data Sources
@@ -27,9 +29,10 @@ Open `index.html` in any modern browser to view the analysis.
 ## Tech Stack
 
 - Pure HTML5, CSS3, JavaScript (no frameworks)
-- Chart.js for interactive data visualizations
-- 12 interactive charts including line, bar, doughnut, radar, and scatter plots
-- Apple-inspired dark theme design system
+- Apache ECharts 5.6 for professional-grade data visualizations
+- 16 interactive charts: line, area, bar, scatter, radar, gauge, treemap, heatmap, and bubble
+- Institutional dark theme design system with cool-tinted backgrounds
+- Tabular numerals, reduced-motion accessibility support
 - Fully responsive (mobile, tablet, desktop)
 - Scroll-driven animations with Intersection Observer
 

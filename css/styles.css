@@ -7,10 +7,10 @@
 :root {
   /* Colors - Dark premium palette */
   --bg-primary: #000000;
-  --bg-secondary: #0a0a0a;
-  --bg-tertiary: #111111;
-  --bg-card: #1a1a1a;
-  --bg-card-hover: #222222;
+  --bg-secondary: #09090b;
+  --bg-tertiary: #0f0f12;
+  --bg-card: #18181c;
+  --bg-card-hover: #1f1f23;
   --bg-glass: rgba(255, 255, 255, 0.05);
   --bg-glass-hover: rgba(255, 255, 255, 0.08);
 
@@ -279,7 +279,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   gap: 1px;
   background: var(--border-subtle);
-  border-radius: 20px;
+  border-radius: 16px;
   overflow: hidden;
   max-width: 800px;
   width: 100%;
@@ -406,7 +406,7 @@ body {
 .card {
   background: var(--bg-card);
   border: 1px solid var(--border-subtle);
-  border-radius: 20px;
+  border-radius: 16px;
   padding: 32px;
   transition: all var(--transition-medium);
   position: relative;
@@ -420,14 +420,14 @@ body {
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.06), transparent);
 }
 
 .card:hover {
   background: var(--bg-card-hover);
   border-color: var(--border-medium);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-card);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .card-grid {
@@ -486,7 +486,7 @@ body {
 .data-table-container {
   background: var(--bg-card);
   border: 1px solid var(--border-subtle);
-  border-radius: 20px;
+  border-radius: 16px;
   overflow: hidden;
 }
 
@@ -533,6 +533,7 @@ body {
 .data-table .mono {
   font-family: var(--font-mono);
   font-size: 13px;
+  font-variant-numeric: tabular-nums lining-nums;
 }
 
 /* ============================================
@@ -541,7 +542,7 @@ body {
 .chart-container {
   background: var(--bg-card);
   border: 1px solid var(--border-subtle);
-  border-radius: 20px;
+  border-radius: 16px;
   padding: 32px;
   margin-bottom: 24px;
 }
@@ -626,6 +627,11 @@ body {
   letter-spacing: -0.02em;
 }
 
+.metric-value, .hero-metric-value, .verdict-target-value, .stat-bar-value, .signal-value {
+  font-variant-numeric: tabular-nums lining-nums;
+  font-feature-settings: "tnum" 1, "lnum" 1;
+}
+
 .metric-label {
   font-size: 12px;
   color: var(--text-tertiary);
@@ -698,8 +704,8 @@ body {
 }
 
 .risk-meter-bar {
-  height: 12px;
-  border-radius: 6px;
+  height: 8px;
+  border-radius: 4px;
   background: linear-gradient(90deg, var(--accent-green), var(--accent-yellow), var(--accent-orange), var(--accent-red));
   position: relative;
   margin-bottom: 12px;
@@ -707,9 +713,9 @@ body {
 
 .risk-meter-needle {
   position: absolute;
-  top: -6px;
-  width: 4px;
-  height: 24px;
+  top: -5px;
+  width: 3px;
+  height: 18px;
   background: white;
   border-radius: 2px;
   box-shadow: 0 0 8px rgba(255,255,255,0.5);
@@ -1080,7 +1086,7 @@ body {
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -1110,13 +1116,22 @@ body {
 
 .animate-on-scroll {
   opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.6s var(--ease-out-expo), transform 0.6s var(--ease-out-expo);
+  transform: translateY(20px);
+  transition: opacity 0.5s var(--ease-out-expo), transform 0.5s var(--ease-out-expo);
 }
 
 .animate-on-scroll.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 /* ============================================
