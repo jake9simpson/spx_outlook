@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S&P 500 Market Intelligence | 2026 Outlook</title>
+  <meta name="description" content="Comprehensive S&P 500 and NASDAQ market analysis for 2026. Technical analysis, fundamental research, geopolitical risk assessment, and market outlook.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <style>
+    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; }
+    .nav-logo-text, .hero-title, .section-title, .card-title, .chart-title,
+    .verdict-title, .metric-value, .hero-metric-value { font-family: 'Inter', -apple-system, sans-serif; }
+  </style>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+</head>
+<body>
+
+  <!-- Reading Progress -->
+  <div class="reading-progress"></div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <div class="nav-logo-icon">MI</div>
+        <span class="nav-logo-text">Market Intelligence</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#overview" class="active">Overview</a></li>
+        <li><a href="#technical">Technical</a></li>
+        <li><a href="#fundamental">Fundamental</a></li>
+        <li><a href="#ai-impact">AI Impact</a></li>
+        <li><a href="#geopolitical">Geopolitical</a></li>
+        <li><a href="#historical">Historical</a></li>
+        <li><a href="#outlook">Outlook</a></li>
+      </ul>
+      <span class="nav-date"></span>
+      <button class="nav-mobile-toggle">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- ============================================ -->
+  <!-- HERO SECTION -->
+  <!-- ============================================ -->
+  <section class="hero" id="top">
+    <div class="hero-badge">
+      <span class="pulse"></span>
+      Live Market Analysis &mdash; Updated February 2026
+    </div>
+
+    <h1 class="hero-title">
+      <span class="gradient-text">S&P 500</span><br>
+      Market Intelligence
+    </h1>
+
+    <p class="hero-subtitle">
+      Deep research into whether the market will top in 2026. Comprehensive analysis spanning technical indicators, fundamentals, AI dynamics, and geopolitical risk.
+    </p>
+
+    <div class="hero-metrics">
+      <div class="hero-metric">
+        <div class="hero-metric-value" data-counter="6836" data-prefix="" data-decimals="0">0</div>
+        <div class="hero-metric-label">S&P 500</div>
+      </div>
+      <div class="hero-metric">
+        <div class="hero-metric-value positive">+6.8%</div>
+        <div class="hero-metric-label">YTD Return</div>
+      </div>
+      <div class="hero-metric">
+        <div class="hero-metric-value neutral">39.7x</div>
+        <div class="hero-metric-label">CAPE Ratio</div>
+      </div>
+      <div class="hero-metric">
+        <div class="hero-metric-value negative">Elevated</div>
+        <div class="hero-metric-label">Risk Level</div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator">
+      <span>Scroll to explore</span>
+      <div class="arrow"></div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- MARKET OVERVIEW -->
+  <!-- ============================================ -->
+  <section class="section section-dark" id="overview">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <div class="section-eyebrow">Market Overview</div>
+        <h2 class="section-title">Where We Stand Today</h2>
+        <p class="section-description">Key market metrics as of February 13, 2026, painting a picture of a market at historically elevated valuations with mixed signals.</p>
+      </div>
+
+      <!-- Key Metrics Strip -->
+      <div class="metric-strip animate-on-scroll">
+        <div class="metric-item">
+          <div class="metric-value" style="color: var(--accent-blue)">6,836</div>
+          <div class="metric-label">S&P 500</div>
+          <div class="metric-change positive" style="color: var(--accent-green)">+6.8% YTD</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-value" style="color: var(--accent-blue)">22,547</div>
+          <div class="metric-label">NASDAQ</div>
+          <div class="metric-change positive" style="color: var(--accent-green)">+16.7% YTD</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-value" style="color: var(--accent-blue)">49,501</div>
+          <div class="metric-label">Dow Jones</div>
+          <div class="metric-change positive" style="color: var(--accent-green)">+0.10%</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-value" style="color: var(--accent-blue)">2,647</div>
+          <div class="metric-label">Russell 2000</div>
+          <div class="metric-change positive" style="color: var(--accent-green)">+1.18%</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-value" style="color: var(--accent-orange)">29.1x</div>
+          <div class="metric-label">Trailing P/E</div>
+          <div class="metric-change neutral" style="color: var(--accent-orange)">+62% vs avg</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-value" style="color: var(--accent-orange)">21.5x</div>
+          <div class="metric-label">Forward P/E</div>
+          <div class="metric-change neutral" style="color: var(--accent-orange)">Above 10yr avg</div>
+        </div>
+      </div>
+
+      <!-- S&P 500 Historical Chart -->
+      <div class="chart-container animate-on-scroll">
+        <div class="chart-header">
+          <div>
+            <div class="chart-title">S&P 500 Index &mdash; 20-Year Journey</div>
+            <div class="chart-subtitle">From 1,400 to nearly 7,000 &mdash; a 388% total advance</div>
+          </div>
+        </div>
+        <div class="chart-wrapper">
+          <canvas id="sp500HistoricalChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Annual Returns Chart -->
+      <div class="chart-container animate-on-scroll">
+        <div class="chart-header">
+          <div>
+            <div class="chart-title">S&P 500 Annual Returns</div>
+            <div class="chart-subtitle">Two consecutive years of 25%+ returns (2023-2024) &mdash; a rare event that raises cycle concerns</div>
+          </div>
+        </div>
+        <div class="chart-wrapper">
+          <canvas id="annualReturnsChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Key Observations -->
+      <div class="card-grid animate-on-scroll" style="margin-top: 40px;">
+        <div class="card">
+          <div class="card-icon card-icon-green">&#8593;</div>
+          <div class="card-title">Bull Market: 1,200+ Days</div>
+          <div class="card-description">The current "AI Bull" market began in October 2022 and has advanced over 92%. This is the 10th bull market lasting 1,000+ days, but the average bull lasts 1,011 days &mdash; suggesting we're running above average.</div>
+        </div>
+        <div class="card">
+          <div class="card-icon card-icon-orange">&#9888;</div>
+          <div class="card-title">Rare Consensus Optimism</div>
+          <div class="card-description">All 21 Wall Street strategists surveyed foresee gains for the S&P 500 in 2026. This unanimity is historically rare and, from a contrarian perspective, can mark inflection points. Average target: ~7,000+.</div>
+        </div>
+        <div class="card">
+          <div class="card-icon card-icon-red">&#9888;</div>
+          <div class="card-title">Hindenburg Omens Triggered</div>
+          <div class="card-description">Three Hindenburg Omen signals fired within 6 trading days in early February 2026, even as the NYSE A/D line hit a new all-time high. This divergence between new highs and new lows historically precedes significant pullbacks.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- TECHNICAL ANALYSIS -->
+  <!-- ============================================ -->
+  <section class="section" id="technical">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <div class="section-eyebrow">Technical Analysis</div>
+        <h2 class="section-title">Reading the Charts</h2>
+        <p class="section-description">Technical indicators are showing a growing divergence between price and momentum &mdash; a pattern that often precedes corrections.</p>
+      </div>
+
+      <!-- Technical Signals Dashboard -->
+      <div class="card-grid-2 animate-on-scroll">
+        <div>
+          <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 20px; color: var(--text-primary);">Key Technical Indicators</h3>
+
+          <div class="signal-gauge">
+            <div class="signal-dot neutral"></div>
+            <div class="signal-name">50-Day Moving Average</div>
+            <div class="signal-value">6,886 &mdash; 6,902</div>
+            <span class="signal-verdict neutral">At MA</span>
+          </div>
+
+          <div class="signal-gauge">
+            <div class="signal-dot bullish"></div>
+            <div class="signal-name">200-Day Moving Average</div>
+            <div class="signal-value">6,470 &mdash; 6,924</div>
+            <span class="signal-verdict bullish">Above</span>
+          </div>
+
+          <div class="signal-gauge">
+            <div class="signal-dot bearish"></div>
+            <div class="signal-name">RSI (14-Day)</div>
+            <div class="signal-value">37.2 &mdash; 52.1</div>
+            <span class="signal-verdict neutral">Neutral</span>
+          </div>
+
+          <div class="signal-gauge">
+            <div class="signal-dot bearish"></div>
+            <div class="signal-name">MACD</div>
+            <div class="signal-value">-18.52</div>
+            <span class="signal-verdict bearish">Sell</span>
+          </div>
+
+          <div class="signal-gauge">
+            <div class="signal-dot neutral"></div>
+            <div class="signal-name">Bollinger Bands (25)</div>
+            <div class="signal-value">6,879 &mdash; 6,969</div>
+            <span class="signal-verdict neutral">Mid-Band</span>
+          </div>
+
+          <div class="signal-gauge">
+            <div class="signal-dot bearish"></div>
+            <div class="signal-name">Moving Average Signals</div>
+            <div class="signal-value">4 Buy / 8 Sell</div>
+            <span class="signal-verdict bearish">Sell</span>
+          </div>
+        </div>
+
+        <div>
+          <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 20px; color: var(--text-primary);">Support &amp; Resistance Levels</h3>
+
+          <div class="card" style="margin-bottom: 16px;">
+            <div class="card-title" style="color: var(--accent-red); font-size: 16px;">Resistance Zones</div>
+            <div class="card-description">
+              <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--border-subtle);">
+                <span>Gamma Wall / Psychological</span>
+                <span class="mono" style="color: var(--accent-red); font-weight: 600;">7,000 &mdash; 7,020</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--border-subtle);">
+                <span>161.8% Fibonacci Extension</span>
+                <span class="mono" style="color: var(--accent-red); font-weight: 600;">7,100 &mdash; 7,119</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; padding: 8px 0;">
+                <span>Elliott Wave Measured Move</span>
+                <span class="mono" style="color: var(--accent-red); font-weight: 600;">7,490</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="margin-bottom: 16px;">
+            <div class="card-title" style="color: var(--accent-green); font-size: 16px;">Support Zones</div>
+            <div class="card-description">
+              <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--border-subtle);">
+                <span>100-Day SMA (tested twice)</span>
+                <span class="mono" style="color: var(--accent-green); font-weight: 600;">6,600 &mdash; 6,650</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--border-subtle);">
+                <span>200-Day SMA</span>
+                <span class="mono" style="color: var(--accent-green); font-weight: 600;">6,470</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; padding: 8px 0;">
+                <span>Oct 2024 Breakout Level</span>
+                <span class="mono" style="color: var(--accent-green); font-weight: 600;">5,900 &mdash; 6,000</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title" style="font-size: 16px;">Bearish Divergence Warning</div>
+            <div class="card-description">Between Dec 9, 2025 and Jan 13, 2026, the S&P 500 made higher highs while the Rate of Change (ROC) declined. RSI is also diverging negatively against price, indicating danger of a reaction downwards. NASDAQ daily signals show "Strong Sell" on shorter timeframes.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Market Breadth Section -->
+      <div class="card animate-on-scroll" style="margin-top: 40px;">
+        <div class="card-title" style="margin-bottom: 20px;">Market Breadth Analysis</div>
+        <div class="card-grid-3" style="gap: 32px;">
+          <div>
+            <h4 style="font-size: 15px; font-weight: 600; color: var(--accent-blue); margin-bottom: 12px;">Advance/Decline Line</h4>
+            <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.6;">The NYSE A/D line hit a new all-time high on Feb 4, 2026, suggesting plentiful liquidity. However, since peaking in Nov 2024, the line has generally trended lower when looking at the longer-term picture. Gains have been driven by a relatively small number of stocks.</p>
+          </div>
+          <div>
+            <h4 style="font-size: 15px; font-weight: 600; color: var(--accent-orange); margin-bottom: 12px;">Hindenburg Omen</h4>
+            <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.6;">Three Hindenburg Omen signals triggered within 6 trading days in early Feb 2026. This rare signal fires when both new highs and new lows are elevated simultaneously &mdash; indicating internal market stress despite surface-level strength.</p>
+          </div>
+          <div>
+            <h4 style="font-size: 15px; font-weight: 600; color: var(--accent-red); margin-bottom: 12px;">Sector Rotation Shift</h4>
+            <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.6;">Industrials, Energy, Materials, and non-US equities are now leading. Consumer Staples becoming a genuine momentum play. This rotation away from tech leadership toward defensive sectors is a classic late-cycle signal.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sector Performance Chart -->
+      <div class="chart-container animate-on-scroll" style="margin-top: 24px;">
+        <div class="chart-header">
+          <div>
+            <div class="chart-title">Sector Performance: 2025 vs 2026 YTD</div>
+            <div class="chart-subtitle">A visible rotation from Tech/Communication Services leadership toward Industrials and Materials</div>
+          </div>
+        </div>
+        <div class="chart-wrapper-lg">
+          <canvas id="sectorChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- FUNDAMENTAL ANALYSIS -->
+  <!-- ============================================ -->
+  <section class="section section-dark" id="fundamental">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <div class="section-eyebrow">Fundamental Analysis</div>
+        <h2 class="section-title">The Valuation Question</h2>
+        <p class="section-description">Earnings growth remains robust, but valuations are at levels that historically imply low forward returns over the next decade.</p>
+      </div>
+
+      <!-- Valuation Comparison Chart -->
+      <div class="chart-container animate-on-scroll">
+        <div class="chart-header">
+          <div>
+            <div class="chart-title">Valuations vs. Historical Peak Comparisons</div>
+            <div class="chart-subtitle">Current CAPE of 39.7x approaches the 2000 dot-com bubble peak of 44.2x</div>
+          </div>
+        </div>
+        <div class="chart-wrapper">
+          <canvas id="valuationChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Valuation Table -->
+      <div class="data-table-container animate-on-scroll" style="margin-top: 32px;">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Metric</th>
+              <th>Current Value</th>
+              <th>Historical Average</th>
+              <th>% Above Average</th>
+              <th>Signal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Shiller CAPE Ratio</strong></td>
+              <td class="mono highlight">39.74x</td>
+              <td class="mono">17.3x</td>
+              <td class="mono negative">+130%</td>
+              <td><span class="pill pill-red">Strongly Overvalued</span></td>
+            </tr>
+            <tr>
+              <td><strong>Trailing P/E Ratio</strong></td>
+              <td class="mono highlight">29.06x</td>
+              <td class="mono">18.0x</td>
+              <td class="mono negative">+61%</td>
+              <td><span class="pill pill-red">Overvalued</span></td>
+            </tr>
+            <tr>
+              <td><strong>Forward P/E Ratio</strong></td>
+              <td class="mono highlight">21.5x</td>
+              <td class="mono">16.3x (25yr)</td>
+              <td class="mono negative">+32%</td>
+              <td><span class="pill pill-orange">Elevated</span></td>
+            </tr>
+            <tr>
+              <td><strong>Buffett Indicator</strong></td>
+              <td class="mono highlight">220 &mdash; 230%</td>
+              <td class="mono">100%</td>
+              <td class="mono negative">+120%</td>
+              <td><span class="pill pill-red">Record High</span></td>
+            </tr>
+            <tr>
+              <td><strong>Dividend Yield</strong></td>
+              <td class="mono highlight">1.24%</td>
+              <td class="mono">1.83% (10yr)</td>
+              <td class="mono negative">-32%</td>
+              <td><span class="pill pill-orange">Below Average</span></td>
+            </tr>
+            <tr>
+              <td><strong>Forward P/E vs 5yr Avg</strong></td>
+              <td class="mono highlight">21.5x</td>
+              <td class="mono">20.0x (5yr)</td>
+              <td class="mono neutral">+7.5%</td>
+              <td><span class="pill pill-orange">Slightly Elevated</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Earnings Growth -->
+      <div class="chart-container animate-on-scroll" style="margin-top: 32px;">
+        <div class="chart-header">
+          <div>
+            <div class="chart-title">S&P 500 Earnings Growth Trajectory</div>
+            <div class="chart-subtitle">Analysts project 14.4% earnings growth and 7.5% revenue growth for 2026</div>
+          </div>
+        </div>
+        <div class="chart-wrapper">
+          <canvas id="earningsChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Buffett Indicator Chart -->
+      <div class="chart-container animate-on-scroll" style="margin-top: 24px;">
+        <div class="chart-header">
+          <div>
+            <div class="chart-title">Buffett Indicator (Market Cap to GDP)</div>
+            <div class="chart-subtitle">At 230%, this measure is at an all-time record &mdash; 66.8% above trendline (2.09 standard deviations)</div>
+          </div>
+        </div>
+        <div class="chart-wrapper">
+          <canvas id="buffettChart"></canvas>
+        </div>
+      </div>
+
+      <!-- CAPE vs Forward Returns -->
+      <div class="chart-container animate-on-scroll" style="margin-top: 24px;">
+        <div class="chart-header">
+          <div>
+            <div class="chart-title">CAPE Ratio vs. 10-Year Forward Returns</div>
+            <div class="chart-subtitle">At current CAPE of ~40x, historical data implies ~0% annualized returns over the next decade</div>
+          </div>
+        </div>
+        <div class="chart-wrapper">
+          <canvas id="capeReturnsChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Wall Street Targets -->
+      <div class="card animate-on-scroll" style="margin-top: 32px;">
+        <div class="card-title" style="margin-bottom: 20px;">Wall Street 2026 S&P 500 Year-End Targets</div>
+        <div class="data-table-container" style="border: none;">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Firm</th>
+                <th>Target</th>
+                <th>Implied Return</th>
+                <th>Key Thesis</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Goldman Sachs</strong></td>
+                <td class="mono highlight">7,600</td>
+                <td class="mono positive">+11%</td>
+                <td>AI adoption, GDP growth 2.7%, corporate re-leveraging</td>
+              </tr>
+              <tr>
+                <td><strong>Morgan Stanley</strong></td>
+                <td class="mono highlight">7,400</td>
+                <td class="mono positive">+8%</td>
+                <td>Bull market has room to run, broadening participation</td>
+              </tr>
+              <tr>
+                <td><strong>JP Morgan</strong></td>
+                <td class="mono highlight">7,100</td>
+                <td class="mono positive">+4%</td>
+                <td>Earnings growth supports market, but risks elevated</td>
+              </tr>
+              <tr>
+                <td><strong>UBS</strong></td>
+                <td class="mono highlight">7,000</td>
+                <td class="mono positive">+2%</td>
+                <td>Moderation expected after two strong years</td>
+              </tr>
+              <tr>
+                <td><strong>Yardeni Research</strong></td>
+                <td class="mono highlight">7,000</td>
+                <td class="mono positive">+2%</td>
+                <td>Roaring 2020s thesis continues</td>
+              </tr>
+              <tr>
+                <td><strong>Consensus Average</strong></td>
+                <td class="mono" style="color: var(--accent-teal); font-weight: 700;">~7,200</td>
+                <td class="mono positive">+5%</td>
+                <td><em>All 21 strategists forecast gains &mdash; rare unanimity</em></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- AI IMPACT -->
+  <!-- ============================================ -->
+  <section class="section" id="ai-impact">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <div class="section-eyebrow">The AI Factor</div>
+        <h2 class="section-title">AI: Bull Engine or Bubble Risk?</h2>
+        <p class="section-description">Artificial intelligence is the dominant force behind this bull market. The question is whether $600B+ in AI capex will generate the returns to justify current valuations.</p>
+      </div>
+
+      <!-- Mag 7 Chart -->
+      <div class="card-grid-2 animate-on-scroll">
+        <div class="chart-container" style="margin-bottom: 0;">
+          <div class="chart-header">
+            <div>
+              <div class="chart-title">Magnificent 7 S&P 500 Concentration</div>
+              <div class="chart-subtitle">Top 7 stocks = ~32.3% of the entire index</div>
+            </div>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="mag7Chart"></canvas>
+          </div>
+        </div>
+
+        <div>
+          <div class="card" style="margin-bottom: 16px;">
+            <div class="card-icon card-icon-purple">&#9889;</div>
+            <div class="card-title">NVIDIA: The AI Bellwether</div>
+            <div class="card-description">
+              <p>Fiscal 2025 revenue: <strong style="color: var(--accent-green);">$130.5 billion (+114% YoY)</strong></p>
+              <p style="margin-top: 8px;">GAAP EPS: $2.94 (+147% YoY). The company has become the de facto picks-and-shovels play of the AI revolution, but the question remains: can this growth rate sustain?</p>
+            </div>
+          </div>
+
+          <div class="card" style="margin-bottom: 16px;">
+            <div class="card-icon card-icon-blue">&#128200;</div>
+            <div class="card-title">Hyperscaler AI Capex Explosion</div>
+            <div class="card-description">
+              <p>Projected hyperscaler capex for 2026: <strong style="color: var(--accent-blue);">$600B+ (up 36% YoY)</strong></p>
+              <p style="margin-top: 8px;">Goldman Sachs estimates AI companies may invest more than $500B in 2026. The top 5 hyperscalers went from $256B (2024) to $443B (2025) to an estimated $602B (2026).</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-icon card-icon-orange">&#9888;</div>
+            <div class="card-title">The ROI Question</div>
+            <div class="card-description">
+              <p>KKR's analysis in "Beyond the Bubble" acknowledges AI infrastructure will compound long after hype fades, but the near-term revenue generation vs. spending gap is a legitimate concern. The dot-com comparison is valid: the technology was transformative, but the market was ahead of itself.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI Analysis Prose -->
+      <div class="card animate-on-scroll" style="margin-top: 32px; padding: 48px;">
+        <div class="prose">
+          <h3>The 2026 AI Paradox</h3>
+          <p>The market finds itself in what analysts are calling "The 2026 AI Paradox." Cooling inflation data would normally be bullish, yet the S&P 500 skidded toward a weekly loss in mid-February despite positive inflation prints. Why? Because the market has already priced in an enormous amount of AI-driven growth.</p>
+
+          <p>The Magnificent 7 (Apple, Microsoft, NVIDIA, Amazon, Alphabet, Meta, Tesla) account for roughly <strong>32.3% of the S&P 500's total market cap</strong>. This level of concentration exceeds even the late-1990s tech bubble peak. If AI revenue growth disappoints, the cascading effect on index-level returns would be severe.</p>
+
+          <div class="callout">
+            <p><strong>Key risk:</strong> DeepSeek and Chinese AI competition demonstrated in early 2025 that open-source models could achieve comparable performance at a fraction of the cost. This challenges the "AI monetization premium" baked into US tech valuations and raises questions about whether the hundreds of billions being spent on AI infrastructure will generate proportionate returns.</p>
+          </div>
+
+          <h3>Bull Case for AI</h3>
+          <ul>
+            <li>AI adoption is genuinely accelerating across enterprises &mdash; not just hype</li>
+            <li>Goldman Sachs identifies AI adoption as one of five key investment themes for 2026</li>
+            <li>Infrastructure spending creates its own demand flywheel</li>
+            <li>Unlike dot-com, the companies leading AI are massively profitable with real revenue</li>
+          </ul>
+
+          <h3>Bear Case for AI</h3>
+          <ul>
+            <li>$600B+ annual capex needs proportionate revenue growth to justify multiples</li>
+            <li>Open-source competition (DeepSeek) challenges pricing power</li>
+            <li>Market concentration in 7 stocks creates fragility</li>
+            <li>History shows even transformative technologies can see 50-80% drawdowns when valuations get ahead of fundamentals (Amazon fell 93% from 1999 peak to 2001 trough &mdash; despite being the right company to own)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- GEOPOLITICAL RISKS -->
+  <!-- ============================================ -->
+  <section class="section section-dark" id="geopolitical">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <div class="section-eyebrow">Geopolitical Risk</div>
+        <h2 class="section-title">Policy Uncertainty Rising</h2>
+        <p class="section-description">Trump's second-term tariff policies, DOGE spending cuts, and global conflicts create an unusually complex risk landscape for 2026.</p>
+      </div>
+
+      <!-- Geopolitical Risk Chart -->
+      <div class="chart-container animate-on-scroll">
+        <div class="chart-header">
+          <div>
+            <div class="chart-title">Economic Policy Uncertainty &amp; Geopolitical Risk</div>
+            <div class="chart-subtitle">Policy uncertainty has been rising since late 2025, now at elevated levels</div>
+          </div>
+        </div>
+        <div class="chart-wrapper">
+          <canvas id="geopoliticalChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Tariff Timeline -->
+      <div class="card animate-on-scroll" style="margin-top: 32px; padding: 48px;">
+        <h3 style="font-size: 22px; font-weight: 600; margin-bottom: 32px;">Trump Tariff Timeline &amp; Trade War Status</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">January 2025 &mdash; April 2025</div>
+            <div class="timeline-content">
+              <h4>Escalation Phase</h4>
+              <p>Average effective US tariff rate surged from <strong>2.5% to 27%</strong> &mdash; the highest in over a century. Tariffs imposed on Canada, Mexico, and China. Chinese retaliatory tariffs took effect February 10, including 15% on American coal, LNG, and crude oil.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot" style="background: var(--accent-orange);"></div>
+            <div class="timeline-date">May 2025</div>
+            <div class="timeline-content">
+              <h4>US-China 90-Day Truce</h4>
+              <p>Both sides reduced bilateral tariffs from 125% to 10%. Agreement extended in August. Effective tariff rate began declining from peak levels.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot" style="background: var(--accent-green);"></div>
+            <div class="timeline-date">November 2025</div>
+            <div class="timeline-content">
+              <h4>Partial Normalization</h4>
+              <p>Overall average effective tariff rate settled at <strong>16.8%</strong>. Still dramatically above the pre-Trump 2.5% level, creating persistent headwinds for corporate margins and global supply chains.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot" style="background: var(--accent-red);"></div>
+            <div class="timeline-date">February 2026</div>
+            <div class="timeline-content">
+              <h4>Ongoing Uncertainty</h4>
+              <p>New tariff threats and policy announcements continue to create uncertainty. The 2025-2026 US trade war with Canada and Mexico remains ongoing. Midterm election dynamics may influence further policy moves.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Geopolitical Risk Cards -->
+      <div class="card-grid-3 animate-on-scroll" style="margin-top: 32px;">
+        <div class="card">
+          <div class="card-icon card-icon-red">&#127758;</div>
+          <div class="card-title">Russia-Ukraine: Year 4</div>
+          <div class="card-description">The war enters its 4th year on Feb 24, 2026. Russia's economy faces rough times with slower growth and higher taxes. European energy costs remain elevated. Continued geopolitical instability weighs on global risk appetite.</div>
+        </div>
+        <div class="card">
+          <div class="card-icon card-icon-orange">&#128176;</div>
+          <div class="card-title">DOGE Spending Cuts</div>
+          <div class="card-description">Elon Musk's DOGE initiative claimed $160B+ in savings, but analysis suggests cuts may have cost taxpayers $135B. The federal workforce is down while government spending is up. Bloomberg characterized it as "rise and fall." Net fiscal impact remains uncertain.</div>
+        </div>
+        <div class="card">
+          <div class="card-icon card-icon-purple">&#128200;</div>
+          <div class="card-title">Midterm Election Dynamics</div>
+          <div class="card-description">2026 is a midterm election year (Year 2 of the presidential cycle). Historically, this is the weakest year for stocks, with an average S&P 500 return of just 4%. However, markets typically bottom in Q3 of midterm years before rallying strongly into Year 3.</div>
+        </div>
+      </div>
+
+      <!-- Fed Rate Chart -->
+      <div class="chart-container animate-on-scroll" style="margin-top: 32px;">
+        <div class="chart-header">
+          <div>
+            <div class="chart-title">Federal Reserve Policy vs. S&P 500</div>
+            <div class="chart-subtitle">Fed funds rate at 4.25% after cutting from 5.5% peak. Market has rallied despite restrictive policy.</div>
+          </div>
+        </div>
+        <div class="chart-wrapper">
+          <canvas id="fedRateChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- HISTORICAL PARALLELS -->
+  <!-- ============================================ -->
+  <section class="section" id="historical">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <div class="section-eyebrow">Historical Parallels</div>
+        <h2 class="section-title">What History Tells Us</h2>
+        <p class="section-description">Comparing current conditions to prior market peaks reveals both comforting and alarming patterns.</p>
+      </div>
+
+      <!-- Sentiment Dashboard -->
+      <div class="card-grid-2 animate-on-scroll">
+        <div class="chart-container" style="margin-bottom: 0;">
+          <div class="chart-header">
+            <div>
+              <div class="chart-title">Sentiment Indicators Radar</div>
+              <div class="chart-subtitle">Current readings vs. extreme bullish (danger) levels</div>
+            </div>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="sentimentRadar"></canvas>
+          </div>
+        </div>
+
+        <div>
+          <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 20px;">Sentiment &amp; Positioning Data</h3>
+
+          <div class="signal-gauge">
+            <div class="signal-dot neutral"></div>
+            <div class="signal-name">AAII Bullish</div>
+            <div class="signal-value">38.5%</div>
+            <span class="signal-verdict neutral">Avg: 37.5%</span>
+          </div>
+
+          <div class="signal-gauge">
+            <div class="signal-dot neutral"></div>
+            <div class="signal-name">CNN Fear &amp; Greed</div>
+            <div class="signal-value">48.9</div>
+            <span class="signal-verdict neutral">Neutral</span>
+          </div>
+
+          <div class="signal-gauge">
+            <div class="signal-dot bearish"></div>
+            <div class="signal-name">Insider Sell/Buy Ratio</div>
+            <div class="signal-value">4.83x</div>
+            <span class="signal-verdict bearish">Most Since 2021</span>
+          </div>
+
+          <div class="signal-gauge">
+            <div class="signal-dot bearish"></div>
+            <div class="signal-name">Margin Debt</div>
+            <div class="signal-value">$1.23T</div>
+            <span class="signal-verdict bearish">Record High</span>
+          </div>
+
+          <div class="signal-gauge">
+            <div class="signal-dot bearish"></div>
+            <div class="signal-name">Fund Manager Cash</div>
+            <div class="signal-value">15-yr Low</div>
+            <span class="signal-verdict bearish">Contrarian Sell</span>
+          </div>
+
+          <div class="signal-gauge">
+            <div class="signal-dot neutral"></div>
+            <div class="signal-name">VIX Index</div>
+            <div class="signal-value">~15-18</div>
+            <span class="signal-verdict neutral">Low Volatility</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bubble Indicator Scorecard -->
+      <div class="card animate-on-scroll" style="margin-top: 40px; padding: 48px;">
+        <h3 style="font-size: 22px; font-weight: 600; margin-bottom: 8px;">Bubble Indicator Scorecard</h3>
+        <p style="font-size: 14px; color: var(--text-tertiary); margin-bottom: 32px;">Assessing how current conditions compare to prior bubble peaks</p>
+
+        <div class="stat-bar-container">
+          <div class="stat-bar-header">
+            <span class="stat-bar-label">Shiller CAPE Ratio (39.7x vs 44.2x in 2000)</span>
+            <span class="stat-bar-value" style="color: var(--accent-red);">90% of dot-com peak</span>
+          </div>
+          <div class="stat-bar-track">
+            <div class="stat-bar-fill red" data-width="90"></div>
+          </div>
+        </div>
+
+        <div class="stat-bar-container">
+          <div class="stat-bar-header">
+            <span class="stat-bar-label">Buffett Indicator (230% vs 148% in 2000)</span>
+            <span class="stat-bar-value" style="color: var(--accent-red);">Record &mdash; Exceeds all prior peaks</span>
+          </div>
+          <div class="stat-bar-track">
+            <div class="stat-bar-fill red" data-width="100"></div>
+          </div>
+        </div>
+
+        <div class="stat-bar-container">
+          <div class="stat-bar-header">
+            <span class="stat-bar-label">Margin Debt ($1.23T &mdash; record high)</span>
+            <span class="stat-bar-value" style="color: var(--accent-red);">Record &mdash; +36% YoY</span>
+          </div>
+          <div class="stat-bar-track">
+            <div class="stat-bar-fill red" data-width="95"></div>
+          </div>
+        </div>
+
+        <div class="stat-bar-container">
+          <div class="stat-bar-header">
+            <span class="stat-bar-label">Insider Sell/Buy Ratio (4.83x &mdash; most since 2021)</span>
+            <span class="stat-bar-value" style="color: var(--accent-red);">Elevated</span>
+          </div>
+          <div class="stat-bar-track">
+            <div class="stat-bar-fill red" data-width="85"></div>
+          </div>
+        </div>
+
+        <div class="stat-bar-container">
+          <div class="stat-bar-header">
+            <span class="stat-bar-label">Market Concentration (Top 7 = 32%)</span>
+            <span class="stat-bar-value" style="color: var(--accent-orange);">Exceeds 2000 levels</span>
+          </div>
+          <div class="stat-bar-track">
+            <div class="stat-bar-fill orange" data-width="88"></div>
+          </div>
+        </div>
+
+        <div class="stat-bar-container">
+          <div class="stat-bar-header">
+            <span class="stat-bar-label">IPO Activity (354 in 2025, recovering)</span>
+            <span class="stat-bar-value" style="color: var(--accent-orange);">Below 2021 peak</span>
+          </div>
+          <div class="stat-bar-track">
+            <div class="stat-bar-fill orange" data-width="55"></div>
+          </div>
+        </div>
+
+        <div class="stat-bar-container">
+          <div class="stat-bar-header">
+            <span class="stat-bar-label">AAII Bullish Sentiment (38.5%)</span>
+            <span class="stat-bar-value" style="color: var(--accent-green);">Near average &mdash; not euphoric</span>
+          </div>
+          <div class="stat-bar-track">
+            <div class="stat-bar-fill green" data-width="40"></div>
+          </div>
+        </div>
+
+        <div class="stat-bar-container">
+          <div class="stat-bar-header">
+            <span class="stat-bar-label">CNN Fear &amp; Greed (48.9)</span>
+            <span class="stat-bar-value" style="color: var(--accent-green);">Neutral &mdash; not euphoric</span>
+          </div>
+          <div class="stat-bar-track">
+            <div class="stat-bar-fill green" data-width="49"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Grantham Analysis -->
+      <div class="card animate-on-scroll" style="margin-top: 32px; padding: 48px;">
+        <div class="prose">
+          <h3>Jeremy Grantham's "Superbubble" Warning</h3>
+          <p>In his January 2026 GMO letter, legendary investor Jeremy Grantham &mdash; who correctly called the 2000 and 2008 market tops &mdash; reiterated his "superbubble" thesis. GMO defines a bubble as a <strong>two-standard deviation divergence of asset prices above trend</strong>. By this metric, the current market qualifies.</p>
+
+          <p>Grantham specifically flagged NVIDIA as potentially leading the Mag 7 crash, drawing parallels to Cisco in 2000 (which was the right company in the right industry but still fell 89% from peak to trough as valuations normalized).</p>
+
+          <div class="callout">
+            <p><strong>Grantham's track record:</strong> He predicted the 2000 tech crash, the 2008 financial crisis, and the 2022 bear market. His warning of a potential 50% market crash by 2026 was issued in mid-2023. While his timing has been early in the past, his directional calls have been correct.</p>
+          </div>
+
+          <h3>The Bull Counterargument</h3>
+          <p>Morgan Stanley argues the bull market "still has room to run." Fidelity's analysis suggests the bullish market may have years to run. Key differences from past bubbles include:</p>
+          <ul>
+            <li><strong>Real earnings:</strong> Unlike 2000, today's tech leaders have massive real profits</li>
+            <li><strong>Broader economic health:</strong> GDP growth projected at 2.7%, unemployment low</li>
+            <li><strong>Sentiment not euphoric:</strong> AAII and CNN Fear/Greed readings are neutral, not extreme</li>
+            <li><strong>Productivity gains:</strong> AI is driving real productivity improvements, not just speculation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- MARKET OUTLOOK -->
+  <!-- ============================================ -->
+  <section class="section section-dark" id="outlook">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <div class="section-eyebrow">2026 Outlook</div>
+        <h2 class="section-title">Will the Market Top This Year?</h2>
+        <p class="section-description">Synthesizing all research into a probabilistic framework for what happens next.</p>
+      </div>
+
+      <!-- Risk Meter -->
+      <div class="animate-on-scroll" style="text-align: center; margin-bottom: 48px;">
+        <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 24px;">Overall Market Risk Assessment</h3>
+        <div class="risk-meter">
+          <div class="risk-meter-bar">
+            <div class="risk-meter-needle" data-position="72" style="left: 72%;"></div>
+          </div>
+          <div class="risk-meter-labels">
+            <span>Low Risk</span>
+            <span>Moderate</span>
+            <span>Elevated</span>
+            <span>High Risk</span>
+          </div>
+        </div>
+        <p style="color: var(--accent-orange); font-size: 24px; font-weight: 700; margin-top: 16px;">ELEVATED RISK</p>
+        <p style="color: var(--text-secondary); font-size: 14px;">The weight of evidence suggests significant correction risk, though timing remains uncertain</p>
+      </div>
+
+      <!-- Scenario Analysis Chart -->
+      <div class="chart-container animate-on-scroll">
+        <div class="chart-header">
+          <div>
+            <div class="chart-title">Scenario Analysis: S&P 500 Year-End 2026</div>
+            <div class="chart-subtitle">Three scenarios based on synthesis of all research data</div>
+          </div>
+        </div>
+        <div class="chart-wrapper">
+          <canvas id="scenarioChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Scenarios Grid -->
+      <div class="card-grid-3 animate-on-scroll" style="margin-top: 32px;">
+        <div class="card" style="border-top: 3px solid var(--accent-red);">
+          <div style="text-align: center; margin-bottom: 20px;">
+            <span class="pill pill-red" style="font-size: 14px; padding: 6px 16px;">Bear Case &mdash; 30% Probability</span>
+          </div>
+          <div class="card-title" style="text-align: center; font-size: 32px; color: var(--accent-red);">4,800</div>
+          <div style="text-align: center; color: var(--text-tertiary); font-size: 13px; margin-bottom: 16px;">-30% FROM CURRENT</div>
+          <div class="card-description">
+            <ul style="padding-left: 16px; list-style: disc;">
+              <li>AI capex disappointment triggers tech selloff</li>
+              <li>Tariff escalation resumes, earnings estimates cut 10-15%</li>
+              <li>Recession materializes in H2 2026</li>
+              <li>CAPE mean-reversion begins in earnest</li>
+              <li>Market falls to 200-week MA near 4,800</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" style="border-top: 3px solid var(--accent-blue);">
+          <div style="text-align: center; margin-bottom: 20px;">
+            <span class="pill pill-blue" style="font-size: 14px; padding: 6px 16px;">Base Case &mdash; 45% Probability</span>
+          </div>
+          <div class="card-title" style="text-align: center; font-size: 32px; color: var(--accent-blue);">6,400</div>
+          <div style="text-align: center; color: var(--text-tertiary); font-size: 13px; margin-bottom: 16px;">-6% FROM CURRENT</div>
+          <div class="card-description">
+            <ul style="padding-left: 16px; list-style: disc;">
+              <li>10-15% correction in Q2-Q3 (typical midterm year pattern)</li>
+              <li>Market finds support at 200-day MA (~6,400-6,500)</li>
+              <li>Earnings growth moderates but remains positive</li>
+              <li>Volatility increases but no recession</li>
+              <li>Recovery begins in Q4 ahead of midterm elections</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" style="border-top: 3px solid var(--accent-green);">
+          <div style="text-align: center; margin-bottom: 20px;">
+            <span class="pill pill-green" style="font-size: 14px; padding: 6px 16px;">Bull Case &mdash; 25% Probability</span>
+          </div>
+          <div class="card-title" style="text-align: center; font-size: 32px; color: var(--accent-green);">7,200</div>
+          <div style="text-align: center; color: var(--text-tertiary); font-size: 13px; margin-bottom: 16px;">+5% FROM CURRENT</div>
+          <div class="card-description">
+            <ul style="padding-left: 16px; list-style: disc;">
+              <li>AI monetization exceeds expectations</li>
+              <li>Trade deals reached, tariff uncertainty resolves</li>
+              <li>Fed delivers additional rate cuts</li>
+              <li>Broadening participation lifts all sectors</li>
+              <li>Market advances to 7,000+ as Wall Street targets suggest</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timing Analysis -->
+      <div class="card animate-on-scroll" style="margin-top: 40px; padding: 48px;">
+        <div class="prose">
+          <h3>When Might the Market Top?</h3>
+
+          <p>Based on the convergence of multiple signals, the <strong>highest-probability window for a significant market top or correction is Q2-Q3 2026 (April through September)</strong>. This is supported by:</p>
+
+          <ul>
+            <li><strong>Presidential cycle:</strong> Year 2 (midterm year) is historically the weakest, with the typical low occurring in Q3 before a rally into Year 3. The S&P 500 averages just +4% in midterm years.</li>
+            <li><strong>Technical deterioration:</strong> Bearish divergences between price and momentum (RSI, ROC) are forming now. MACD in sell territory. Hindenburg Omens triggered.</li>
+            <li><strong>Valuation extremes:</strong> CAPE at 39.7x, Buffett Indicator at 230% (record), forward P/E above all historical averages. These don't cause tops but ensure the downside is severe when a catalyst arrives.</li>
+            <li><strong>Insider behavior:</strong> Corporate insiders selling at the highest rate since 2021 (4.83x sell/buy ratio). Insiders have better information than the market.</li>
+            <li><strong>Margin debt at record $1.23T:</strong> Leveraged positions amplify selloffs. Forced selling creates cascading downward pressure.</li>
+            <li><strong>Fund manager positioning:</strong> Cash at 15-year lows. When there's no more cash on the sidelines, who is left to buy?</li>
+          </ul>
+
+          <div class="callout">
+            <p><strong>Important caveat:</strong> Markets can remain irrational longer than you can remain solvent. The 1999 experience showed that a market meeting every "bubble" criterion can still rally another 20-30% before the top. The S&P 500 could easily reach 7,000+ before any significant correction.</p>
+          </div>
+
+          <h3>What Could Prevent a Top</h3>
+          <ul>
+            <li><strong>Fed pivot to aggressive cutting:</strong> If the Fed cuts rates faster than expected, liquidity injection could extend the rally</li>
+            <li><strong>AI revenue breakout:</strong> If hyperscalers start showing AI-driven revenue growth that matches capex, it would justify current valuations</li>
+            <li><strong>Trade resolution:</strong> A comprehensive US-China trade deal would remove a major overhang</li>
+            <li><strong>Earnings beats:</strong> If the projected 14.4% earnings growth is exceeded, multiples could be sustained</li>
+          </ul>
+
+          <h3>What Could Trigger a Top</h3>
+          <ul>
+            <li><strong>AI capex disappointment:</strong> Any major hyperscaler signaling a pullback in AI spending</li>
+            <li><strong>Tariff escalation:</strong> New rounds of tariffs or a breakdown in US-China negotiations</li>
+            <li><strong>Credit event:</strong> Record margin debt + elevated corporate leverage creates vulnerability</li>
+            <li><strong>Geopolitical shock:</strong> Escalation in Ukraine, Taiwan straits, or Middle East</li>
+            <li><strong>NVIDIA earnings miss:</strong> As the AI bellwether, any stumble would reverberate</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Final Verdict -->
+      <div class="verdict-box animate-on-scroll" style="margin-top: 48px;">
+        <div class="verdict-label">Research Conclusion</div>
+        <div class="verdict-title">The Market Is Vulnerable,<br>But the Top May Not Be Imminent</div>
+        <div class="verdict-description">
+          The weight of evidence suggests the S&P 500 is in the late stages of a bull market cycle. Valuations are at extremes seen only during the dot-com bubble. However, strong earnings growth, robust AI spending, and resilient economic fundamentals provide support. The most likely outcome is a 10-15% correction in mid-2026, with a deeper bear market (25-30%) a meaningful tail risk. The consensus "melt-up to 7,000+ followed by a correction" narrative appears most probable.
+        </div>
+        <div class="verdict-targets">
+          <div class="verdict-target">
+            <div class="verdict-target-label">Bear Target</div>
+            <div class="verdict-target-value" style="color: var(--accent-red);">4,800</div>
+          </div>
+          <div class="verdict-target">
+            <div class="verdict-target-label">Base Target</div>
+            <div class="verdict-target-value" style="color: var(--accent-blue);">6,400</div>
+          </div>
+          <div class="verdict-target">
+            <div class="verdict-target-label">Bull Target</div>
+            <div class="verdict-target-value" style="color: var(--accent-green);">7,200</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Key Dates to Watch -->
+      <div class="card animate-on-scroll" style="margin-top: 40px; padding: 48px;">
+        <h3 style="font-size: 22px; font-weight: 600; margin-bottom: 24px;">Key Dates &amp; Events to Watch in 2026</h3>
+        <div class="data-table-container" style="border: none;">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Event</th>
+                <th>Why It Matters</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="mono">Feb 26</td>
+                <td>NVIDIA Q4 FY2026 Earnings</td>
+                <td>AI bellwether &mdash; any miss could trigger sector rotation</td>
+              </tr>
+              <tr>
+                <td class="mono">Mar 18-19</td>
+                <td>FOMC Meeting</td>
+                <td>Rate decision and updated dot plot projections</td>
+              </tr>
+              <tr>
+                <td class="mono">Q2 2026</td>
+                <td>Tariff Negotiation Deadlines</td>
+                <td>US-China trade deal extensions and EU tariff decisions</td>
+              </tr>
+              <tr>
+                <td class="mono">Jul-Sep</td>
+                <td>Midterm Year Seasonal Weakness</td>
+                <td>Historically weakest period of the presidential cycle</td>
+              </tr>
+              <tr>
+                <td class="mono">Nov 3</td>
+                <td>2026 Midterm Elections</td>
+                <td>Markets typically rally strongly into and after midterms</td>
+              </tr>
+              <tr>
+                <td class="mono">Ongoing</td>
+                <td>Hyperscaler Earnings (MSFT, GOOG, AMZN, META)</td>
+                <td>AI capex commentary will drive tech sentiment each quarter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Disclaimer -->
+      <div class="disclaimer animate-on-scroll">
+        <p><strong>Disclaimer:</strong> This analysis is for educational and informational purposes only and does not constitute financial advice, investment recommendations, or an offer to buy or sell securities. All data is sourced from publicly available market data, research reports, and financial news as of February 2026. Past performance is not indicative of future results. The stock market involves risk, including the potential loss of principal. Always consult with a qualified financial advisor before making investment decisions. The projections and scenarios presented represent analytical frameworks, not predictions.</p>
+        <p style="margin-top: 12px;"><strong>Data Sources:</strong> FactSet, S&P Global, FRED (Federal Reserve Economic Data), AAII, CNN, BLS, BEA, GuruFocus, Multpl.com, Yahoo Finance, Goldman Sachs, Morgan Stanley, JP Morgan, UBS, Yardeni Research, GMO, Morningstar, Seeking Alpha, CBOE, FINRA, and other publicly available sources.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- FOOTER -->
+  <!-- ============================================ -->
+  <footer class="footer">
+    <p class="footer-text">S&P 500 Market Intelligence Report &mdash; February 2026</p>
+    <p class="footer-text" style="margin-top: 8px; font-size: 12px;">Built with deep research across technical, fundamental, geopolitical, and historical analysis.</p>
+    <ul class="footer-links">
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#technical">Technical</a></li>
+      <li><a href="#fundamental">Fundamental</a></li>
+      <li><a href="#ai-impact">AI Impact</a></li>
+      <li><a href="#geopolitical">Geopolitical</a></li>
+      <li><a href="#historical">Historical</a></li>
+      <li><a href="#outlook">Outlook</a></li>
+    </ul>
+    <p class="footer-text" style="margin-top: 24px; font-size: 11px; color: var(--text-tertiary);">&copy; 2026 Market Intelligence. For educational purposes only. Not financial advice.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/charts.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
