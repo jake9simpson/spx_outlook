@@ -380,7 +380,7 @@ function renderSectorChart() {
   if (!chart) return;
 
   const sectors = ['Technology', 'Healthcare', 'Financials', 'Cons. Disc.', 'Industrials', 'Comm. Svc.', 'Energy', 'Cons. Staples', 'Utilities', 'Real Estate', 'Materials'];
-  const ytd2026 = [4.2, 6.5, 4.8, -1.2, 3.1, 2.8, -3.4, 2.1, 5.3, 1.2, -0.8];
+  const ytd2026 = [-2.0, 8.0, -3.0, -4.0, -1.5, -1.0, 14.0, 7.0, 5.0, 3.0, 7.0];
   const full2025 = [24.0, 14.6, 15.0, 6.0, 19.4, 33.7, 8.3, 3.9, 16.0, 3.2, -10.5];
 
   chart.setOption({
