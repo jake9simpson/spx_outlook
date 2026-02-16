@@ -23,6 +23,14 @@ const COLORS = {
   tooltipBg: 'rgba(9,9,11,0.95)',
 };
 
+// Convert hex color to rgba string
+function hexToRgba(hex, alpha) {
+  var r = parseInt(hex.slice(1, 3), 16);
+  var g = parseInt(hex.slice(3, 5), 16);
+  var b = parseInt(hex.slice(5, 7), 16);
+  return 'rgba(' + r + ',' + g + ',' + b + ',' + alpha + ')';
+}
+
 // Register custom ECharts theme: marketIntelligence
 (function registerTheme() {
   const theme = {
@@ -962,7 +970,7 @@ function renderScenarioChart() {
           itemStyle: {
             color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
               { offset: 0, color: scenarioColors[i] },
-              { offset: 1, color: scenarioColors[i].replace(')', ', 0.5)').replace('rgb', 'rgba') }
+              { offset: 1, color: hexToRgba(scenarioColors[i], 0.5) }
             ]),
             borderRadius: [8, 8, 0, 0]
           },
@@ -1402,7 +1410,6 @@ function renderRiskGaugeChart() {
             fontWeight: 600,
             color: COLORS.labelColor,
             fontFamily: "'Inter', -apple-system, sans-serif",
-            letterSpacing: 2,
             lineHeight: 24
           }
         },
