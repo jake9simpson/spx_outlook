@@ -165,7 +165,7 @@ function renderSP500HistoricalChart() {
   if (!chart) return;
 
   const labels = ['2006','2007','2008','2009','2010','2011','2012','2013','2014','2015','2016','2017','2018','2019','2020','2021','2022','2023','2024','2025','Feb 2026'];
-  const data = [1418, 1468, 903, 1115, 1258, 1258, 1426, 1848, 2059, 2044, 2239, 2674, 2507, 3231, 3756, 4766, 3840, 4770, 5881, 5942, 6836];
+  const data = [1418, 1468, 903, 1115, 1258, 1258, 1426, 1848, 2059, 2044, 2239, 2674, 2507, 3231, 3756, 4766, 3840, 4770, 5881, 6845, 6836];
 
   chart.setOption({
     ...ANIM,
@@ -237,7 +237,7 @@ function renderAnnualReturnsChart() {
   if (!chart) return;
 
   const years = ['2006','2007','2008','2009','2010','2011','2012','2013','2014','2015','2016','2017','2018','2019','2020','2021','2022','2023','2024','2025'];
-  const returns = [15.8, 5.5, -37.0, 26.5, 15.1, 2.1, 16.0, 32.4, 13.7, 1.4, 12.0, 21.8, -4.4, 31.5, 18.4, 28.7, -18.1, 26.3, 25.0, 1.0];
+  const returns = [15.8, 5.5, -37.0, 26.5, 15.1, 2.1, 16.0, 32.4, 13.7, 1.4, 12.0, 21.8, -4.4, 31.5, 18.4, 28.7, -18.1, 26.3, 25.0, 16.4];
 
   chart.setOption({
     ...ANIM,
@@ -308,7 +308,7 @@ function renderValuationChart() {
 
   const peaks = ['1929 Peak', '2000 Peak', '2007 Peak', '2021 Peak', 'Current\n(Feb 2026)'];
   const cape = [33.1, 44.2, 27.5, 38.6, 39.7];
-  const forwardPE = [20.0, 27.2, 15.7, 22.4, 22.1];
+  const forwardPE = [20.0, 27.2, 15.7, 22.4, 21.5];
 
   chart.setOption({
     ...ANIM,
@@ -381,7 +381,7 @@ function renderSectorChart() {
 
   const sectors = ['Technology', 'Healthcare', 'Financials', 'Cons. Disc.', 'Industrials', 'Comm. Svc.', 'Energy', 'Cons. Staples', 'Utilities', 'Real Estate', 'Materials'];
   const ytd2026 = [4.2, 6.5, 4.8, -1.2, 3.1, 2.8, -3.4, 2.1, 5.3, 1.2, -0.8];
-  const full2025 = [36.6, 2.2, 30.4, 30.1, 17.2, 40.2, -1.3, 14.1, -0.4, -5.2, -0.3];
+  const full2025 = [24.0, 14.6, 15.0, 6.0, 19.4, 33.7, 8.3, 3.9, 16.0, 3.2, -10.5];
 
   chart.setOption({
     ...ANIM,
@@ -462,14 +462,14 @@ function renderMag7Chart() {
   if (!chart) return;
 
   const data = [
-    { value: 7.1, name: 'Apple' },
-    { value: 6.4, name: 'Microsoft' },
-    { value: 6.2, name: 'NVIDIA' },
-    { value: 4.1, name: 'Amazon' },
-    { value: 3.8, name: 'Alphabet' },
-    { value: 2.7, name: 'Meta' },
-    { value: 2.0, name: 'Tesla' },
-    { value: 67.7, name: 'Other 493 Stocks' }
+    { value: 7.3, name: 'Apple' },
+    { value: 6.0, name: 'Microsoft' },
+    { value: 6.5, name: 'NVIDIA' },
+    { value: 4.2, name: 'Amazon' },
+    { value: 4.1, name: 'Alphabet' },
+    { value: 3.2, name: 'Meta' },
+    { value: 2.7, name: 'Tesla' },
+    { value: 66.0, name: 'Other 493 Stocks' }
   ];
   const colors = [
     COLORS.blue, COLORS.green, COLORS.purple, COLORS.orange,
@@ -536,7 +536,7 @@ function renderBuffettChart() {
   if (!chart) return;
 
   const labels = ['2000', '2003', '2005', '2007', '2009', '2011', '2013', '2015', '2017', '2019', '2021', '2023', '2025', 'Feb 2026'];
-  const mcapGdp = [148, 72, 100, 110, 56, 79, 109, 117, 137, 153, 200, 171, 195, 230];
+  const mcapGdp = [148, 72, 100, 110, 56, 79, 109, 117, 137, 153, 200, 171, 195, 220];
   const baseline = labels.map(function () { return 100; });
 
   chart.setOption({
@@ -699,8 +699,8 @@ function renderEarningsChart() {
   if (!chart) return;
 
   const quarters = ['Q1 2025', 'Q2 2025', 'Q3 2025', 'Q4 2025', 'Q1 2026E', 'Q2 2026E', 'Q3 2026E', 'Q4 2026E'];
-  const eps = [57.2, 59.1, 60.8, 62.3, 63.5, 65.2, 66.8, 68.5];
-  const yoyGrowth = [5.8, 10.2, 8.5, 9.1, 11.0, 10.3, 9.9, 9.9];
+  const eps = [57.2, 59.1, 60.8, 63.5, 65.2, 67.5, 69.0, 70.5];
+  const yoyGrowth = [5.8, 10.2, 8.5, 13.2, 11.1, 14.9, 13.5, 11.0];
 
   chart.setOption({
     ...ANIM,
@@ -806,8 +806,8 @@ function renderFedRateChart() {
   if (!chart) return;
 
   const labels = ['Jan 2022','Jul 2022','Jan 2023','Jul 2023','Jan 2024','Jul 2024','Jan 2025','Jul 2025','Jan 2026'];
-  const fedRate = [0.25, 2.5, 4.5, 5.25, 5.5, 5.5, 4.5, 4.25, 4.25];
-  const sp500 = [4516, 3785, 4077, 4589, 4770, 5522, 5942, 5950, 6836];
+  const fedRate = [0.25, 2.5, 4.5, 5.25, 5.5, 5.5, 4.375, 4.375, 3.625];
+  const sp500 = [4516, 3785, 4077, 4589, 4770, 5522, 5881, 5700, 6836];
 
   chart.setOption({
     ...ANIM,
@@ -1507,7 +1507,7 @@ function renderMag7TreemapChart() {
       data: [
         {
           name: 'Apple',
-          value: 7.1,
+          value: 7.3,
           itemStyle: {
             color: new echarts.graphic.LinearGradient(0, 0, 1, 1, [
               { offset: 0, color: '#2997ff' },
@@ -1517,7 +1517,7 @@ function renderMag7TreemapChart() {
         },
         {
           name: 'Microsoft',
-          value: 6.4,
+          value: 6.0,
           itemStyle: {
             color: new echarts.graphic.LinearGradient(0, 0, 1, 1, [
               { offset: 0, color: '#30d158' },
@@ -1527,7 +1527,7 @@ function renderMag7TreemapChart() {
         },
         {
           name: 'NVIDIA',
-          value: 6.2,
+          value: 6.5,
           itemStyle: {
             color: new echarts.graphic.LinearGradient(0, 0, 1, 1, [
               { offset: 0, color: '#bf5af2' },
@@ -1537,7 +1537,7 @@ function renderMag7TreemapChart() {
         },
         {
           name: 'Amazon',
-          value: 4.1,
+          value: 4.2,
           itemStyle: {
             color: new echarts.graphic.LinearGradient(0, 0, 1, 1, [
               { offset: 0, color: '#ff9f0a' },
@@ -1547,7 +1547,7 @@ function renderMag7TreemapChart() {
         },
         {
           name: 'Alphabet',
-          value: 3.8,
+          value: 4.1,
           itemStyle: {
             color: new echarts.graphic.LinearGradient(0, 0, 1, 1, [
               { offset: 0, color: '#64d2ff' },
@@ -1557,7 +1557,7 @@ function renderMag7TreemapChart() {
         },
         {
           name: 'Meta',
-          value: 2.7,
+          value: 3.2,
           itemStyle: {
             color: new echarts.graphic.LinearGradient(0, 0, 1, 1, [
               { offset: 0, color: '#ff375f' },
@@ -1567,7 +1567,7 @@ function renderMag7TreemapChart() {
         },
         {
           name: 'Tesla',
-          value: 2.0,
+          value: 2.7,
           itemStyle: {
             color: new echarts.graphic.LinearGradient(0, 0, 1, 1, [
               { offset: 0, color: '#ff453a' },
@@ -1577,7 +1577,7 @@ function renderMag7TreemapChart() {
         },
         {
           name: 'Other 493',
-          value: 67.7,
+          value: 66.0,
           itemStyle: {
             color: new echarts.graphic.LinearGradient(0, 0, 1, 1, [
               { offset: 0, color: 'rgba(255,255,255,0.08)' },
