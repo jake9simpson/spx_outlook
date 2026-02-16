@@ -1,62 +1,45 @@
-# AeroMetric:
+# S&P 500 Market Intelligence | 2026 Outlook
 
-## STM32 Nucleo 64 Particulate Matter Monitoring System
+A comprehensive stock market analysis website providing deep research into whether the S&P 500 will top in 2026. Features technical analysis, fundamental research, AI impact assessment, geopolitical risk analysis, and historical parallel comparisons.
 
-Monitor and visualize particulate matter levels using an STM32 Nucleo 64 board, PMS5003 sensor, a passive buzzer for alerts, and an 8x64 matrix display for data visualization.
+## Live Site
 
-## Materials Needed
+Open `index.html` in any modern browser to view the analysis.
 
-- STM32 Nucleo board
-- Breadboard
-- PMS5003 Particulate Matter Sensor
-- Passive Buzzer
-- Matrix Display (8x64)
-- Jumper wires
+## What's Included
 
-## Instructions
+- **Market Overview**: Current S&P 500 (6,836), NASDAQ (22,547), key valuation metrics
+- **Technical Analysis**: Moving averages, RSI, MACD, support/resistance levels, market breadth, Hindenburg Omens
+- **Fundamental Analysis**: CAPE ratio (39.7x), Buffett Indicator (230%), forward P/E, earnings projections, Wall Street targets
+- **AI Impact**: Magnificent 7 concentration, NVIDIA analysis, hyperscaler $600B+ capex, dot-com comparisons
+- **Geopolitical Risk**: Trump tariff timeline, trade war status, DOGE spending cuts, Russia-Ukraine, presidential cycle
+- **Historical Parallels**: Bubble indicator scorecard, Jeremy Grantham's superbubble thesis, sentiment data, margin debt records
+- **2026 Outlook**: Scenario analysis (bear/base/bull), timing predictions, key dates to watch
 
-### 1. **Setting Up the Nucleo Board:**
+## Data Sources
 
-- Place on a non-conductive surface.
-- Ensure all pins are straight.
+- FactSet, S&P Global, FRED (Federal Reserve Economic Data)
+- AAII Investor Sentiment Survey, CNN Fear & Greed Index
+- Goldman Sachs, Morgan Stanley, JP Morgan, UBS, Yardeni Research
+- GuruFocus, Multpl.com, Yahoo Finance, CBOE, FINRA
+- GMO (Jeremy Grantham), Morningstar, Seeking Alpha
 
-### 2. **Setting Up the Breadboard:**
+## Tech Stack
 
-- Position next to the Nucleo board.
-- Ensure clean and accessible power rails.
+- Pure HTML5, CSS3, JavaScript (no frameworks)
+- Chart.js for interactive data visualizations
+- 12 interactive charts including line, bar, doughnut, radar, and scatter plots
+- Apple-inspired dark theme design system
+- Fully responsive (mobile, tablet, desktop)
+- Scroll-driven animations with Intersection Observer
 
-### 3. **Connecting the PMS5003:**
+## Key Findings
 
-- Connect to the breadboard as per design.
-- Ensure correct wiring of polarity and data pins.
+- **Risk Level**: Elevated. Valuations at levels seen only during the dot-com bubble.
+- **Most Likely Scenario**: 10-15% correction in Q2-Q3 2026, consistent with midterm year patterns.
+- **Timing Window**: April-September 2026 highest probability for significant pullback.
+- **Consensus Target**: ~7,200 S&P 500 year-end (all 21 Wall Street strategists forecast gains).
 
-### 4. **Setting Up the Passive Buzzer:**
+## Disclaimer
 
-- Insert onto the specified pins on the Nucleo board.
-
-### 5. **Connecting the Matrix Display:**
-
-- Position near the setup, connect to Nucleo board as per design.
-- Ensure correct connections of data, clock, CS, power, and ground lines.
-
-### 6. **Wiring the Components:**
-
-- Make necessary connections as shown in the design.
-- Ensure firm connections with no risk of short-circuiting.
-
-### 7. **Final Checks:**
-
-- Double-check all connections against design.
-- Ensure powered off Nucleo board before making or changing connections.
-
-### 8. **Power Up:**
-
-- Verify all connections, power on the Nucleo board.
-- Connect the Power Supply Adapter to the breadboard.
-
-## Notes & Tips
-
-- Ensure proper orientation of PMS5003 for accurate airflow measurements.
-- Use the passive buzzer for alerting based on PMS5003 data (details in software design).
-- Power off setup before making any connection changes to prevent accidental shorts.
-- If any matrix display LEDs are not illuminating, double-check your connections.
+This analysis is for educational and informational purposes only. Not financial advice. Past performance is not indicative of future results.
