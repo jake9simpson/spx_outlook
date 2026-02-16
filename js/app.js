@@ -225,13 +225,20 @@ document.addEventListener('DOMContentLoaded', function() {
   // ============================================
   // Print-friendly date
   // ============================================
-  const dateElements = document.querySelectorAll('.nav-date, .report-date');
+  // Nav date: show current date
+  const navDateElements = document.querySelectorAll('.nav-date');
   const now = new Date();
-  const dateStr = now.toLocaleDateString('en-US', {
+  const navDateStr = now.toLocaleDateString('en-US', {
     year: 'numeric', month: 'long', day: 'numeric'
   });
-  dateElements.forEach(function(el) {
-    el.textContent = dateStr;
+  navDateElements.forEach(function(el) {
+    el.textContent = navDateStr;
+  });
+
+  // Report date: hardcoded to the report's publication date
+  const reportDateElements = document.querySelectorAll('.report-date');
+  reportDateElements.forEach(function(el) {
+    el.textContent = 'February 13, 2026';
   });
 
 });
