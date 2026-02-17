@@ -52,7 +52,7 @@ function renderSP500HistoricalChart() {
       labels: ['2006','2007','2008','2009','2010','2011','2012','2013','2014','2015','2016','2017','2018','2019','2020','2021','2022','2023','2024','2025','Feb 2026'],
       datasets: [{
         label: 'S&P 500',
-        data: [1418, 1468, 903, 1115, 1258, 1258, 1426, 1848, 2059, 2044, 2239, 2674, 2507, 3231, 3756, 4766, 3840, 4770, 5881, 5942, 6836],
+        data: [1418, 1468, 903, 1115, 1258, 1258, 1426, 1848, 2059, 2044, 2239, 2674, 2507, 3231, 3756, 4766, 3840, 4770, 5881, 6845, 6836],
         borderColor: COLORS.blue,
         backgroundColor: function(context) {
           const chart = context.chart;
@@ -110,7 +110,7 @@ function renderAnnualReturnsChart() {
   if (!ctx) return;
 
   const years = ['2006','2007','2008','2009','2010','2011','2012','2013','2014','2015','2016','2017','2018','2019','2020','2021','2022','2023','2024','2025'];
-  const returns = [15.8, 5.5, -37.0, 26.5, 15.1, 2.1, 16.0, 32.4, 13.7, 1.4, 12.0, 21.8, -4.4, 31.5, 18.4, 28.7, -18.1, 26.3, 25.0, 1.0];
+  const returns = [15.8, 5.5, -37.0, 26.5, 15.1, 2.1, 16.0, 32.4, 13.7, 1.4, 12.0, 21.8, -4.4, 31.5, 18.4, 28.7, -18.1, 26.3, 25.0, 16.4];
 
   new Chart(ctx, {
     type: 'bar',
@@ -221,8 +221,8 @@ function renderSectorChart() {
   if (!ctx) return;
 
   const sectors = ['Technology', 'Healthcare', 'Financials', 'Cons. Disc.', 'Industrials', 'Comm. Svc.', 'Energy', 'Cons. Staples', 'Utilities', 'Real Estate', 'Materials'];
-  const ytd2026 = [4.2, 6.5, 4.8, -1.2, 3.1, 2.8, -3.4, 2.1, 5.3, 1.2, -0.8];
-  const full2025 = [36.6, 2.2, 30.4, 30.1, 17.2, 40.2, -1.3, 14.1, -0.4, -5.2, -0.3];
+  const ytd2026 = [-2.0, 8.0, 2.0, -3.0, 12.0, -3.0, 21.0, 15.0, 6.0, 4.0, 17.0];
+  const full2025 = [33.7, 14.6, 15.0, 6.0, 19.4, 33.7, 8.3, 3.9, 16.0, 3.2, -10.5];
 
   new Chart(ctx, {
     type: 'bar',
@@ -403,7 +403,7 @@ function renderSentimentRadar() {
       datasets: [
         {
           label: 'Current Reading',
-          data: [42, 35, 45, 62, 30, 28],
+          data: [42, 35, 55, 36, 30, 28],
           borderColor: COLORS.blue,
           backgroundColor: 'rgba(41, 151, 255, 0.15)',
           borderWidth: 2,
@@ -525,7 +525,7 @@ function renderFedRateChart() {
         },
         {
           label: 'S&P 500',
-          data: [4516, 3785, 4077, 4589, 4770, 5522, 5942, 5950, 6836],
+          data: [4516, 3785, 4077, 4589, 4770, 5522, 5881, 6200, 6836],
           borderColor: COLORS.blue,
           borderWidth: 2.5,
           pointRadius: 3,
